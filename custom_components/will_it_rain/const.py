@@ -5,7 +5,7 @@ from typing import Final
 
 DOMAIN: Final = "will_it_rain"
 NAME: Final = "Will It Rain"
-VERSION: Final = "1.1.0"
+VERSION: Final = "1.0.0"
 
 # Configuration keys
 CONF_LOCATION: Final = "location"

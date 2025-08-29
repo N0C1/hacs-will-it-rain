@@ -1,7 +1,7 @@
 {
   "domain": "will_it_rain",
   "name": "Will It Rain",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "documentation": "https://github.com/n0c1/hacs-will-it-rain",
   "issue_tracker": "https://github.com/n0c1/hacs-will-it-rain/issues",
   "codeowners": ["@n0c1"],
