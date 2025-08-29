@@ -1,0 +1,7 @@
+{
+  "name": "Will It Rain",
+  "content_in_root": false,
+  "filename": "will_it_rain.zip",
+  "render_readme": true,
+  "homeassistant": "2024.1.0"
+}
