@@ -1,0 +1,89 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Will It Rain Konfiguration",
+        "description": "Konfiguriere die Regenvorhersage-Integration.\n\nStandort-Optionen:\n• 'home' - Home Assistant Standort verwenden (empfohlen)\n• Stadtname - z.B. 'Vienna', 'Munich', 'Amsterdam'\n• Koordinaten - z.B. '47.2692,11.4041'\n\nBeispiele: {examples}",
+        "data": {
+          "location": "Standort",
+          "threshold": "Regenwahrscheinlichkeits-Schwellenwert (%)"
+        }
+      },
+      "reconfigure": {
+        "title": "Will It Rain neu konfigurieren", 
+        "description": "Aktualisiere deine Regenvorhersage-Konfiguration.\n\nBeispiele: {examples}",
+        "data": {
+          "location": "Standort",
+          "threshold": "Regenwahrscheinlichkeits-Schwellenwert (%)"
+        }
+      }
+    },
+    "error": {
+      "invalid_location": "Der angegebene Standort konnte nicht gefunden werden. Bitte überprüfe den Ortsnamen oder die Koordinaten.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuche es erneut."
+    },
+    "abort": {
+      "already_configured": "Dieser Standort ist bereits konfiguriert.",
+      "invalid_location": "Der angegebene Standort konnte nicht gefunden werden.",
+      "unknown": "Ein unerwarteter Fehler ist aufgetreten."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "rain_1h": {
+        "name": "Regen 1 Stunde"
+      },
+      "rain_2h": {
+        "name": "Regen 2 Stunden"
+      },
+      "rain_4h": {
+        "name": "Regen 4 Stunden"
+      },
+      "rain_8h": {
+        "name": "Regen 8 Stunden"
+      },
+      "rain_12h": {
+        "name": "Regen 12 Stunden"
+      },
+      "rain_24h": {
+        "name": "Regen 24 Stunden"
+      },
+      "rain_probability_1h": {
+        "name": "Regenwahrscheinlichkeit 1 Stunde"
+      },
+      "rain_probability_2h": {
+        "name": "Regenwahrscheinlichkeit 2 Stunden"
+      },
+      "rain_probability_4h": {
+        "name": "Regenwahrscheinlichkeit 4 Stunden"
+      },
+      "rain_probability_8h": {
+        "name": "Regenwahrscheinlichkeit 8 Stunden"
+      },
+      "rain_probability_12h": {
+        "name": "Regenwahrscheinlichkeit 12 Stunden"
+      },
+      "rain_probability_24h": {
+        "name": "Regenwahrscheinlichkeit 24 Stunden"
+      },
+      "precipitation_1h": {
+        "name": "Niederschlag 1 Stunde"
+      },
+      "precipitation_2h": {
+        "name": "Niederschlag 2 Stunden"
+      },
+      "precipitation_4h": {
+        "name": "Niederschlag 4 Stunden"
+      },
+      "precipitation_8h": {
+        "name": "Niederschlag 8 Stunden"
+      },
+      "precipitation_12h": {
+        "name": "Niederschlag 12 Stunden"
+      },
+      "precipitation_24h": {
+        "name": "Niederschlag 24 Stunden"
+      }
+    }
+  }
+}

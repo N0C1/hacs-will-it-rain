@@ -1,0 +1,89 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Will It Rain Configuration",
+        "description": "Configure the rain forecast integration.\n\nLocation options:\n• 'home' - Use your Home Assistant location (recommended)\n• City name - e.g., 'Vienna', 'Munich', 'Amsterdam'\n• Coordinates - e.g., '47.2692,11.4041'\n\nExamples: {examples}",
+        "data": {
+          "location": "Location",
+          "threshold": "Rain probability threshold (%)"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Will It Rain",
+        "description": "Update your rain forecast configuration.\n\nExamples: {examples}",
+        "data": {
+          "location": "Location", 
+          "threshold": "Rain probability threshold (%)"
+        }
+      }
+    },
+    "error": {
+      "invalid_location": "Could not find the specified location. Please check the location name or coordinates.",
+      "unknown": "An unexpected error occurred. Please try again."
+    },
+    "abort": {
+      "already_configured": "This location is already configured.",
+      "invalid_location": "Could not find the specified location.",
+      "unknown": "An unexpected error occurred."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "rain_1h": {
+        "name": "Rain 1 hour"
+      },
+      "rain_2h": {
+        "name": "Rain 2 hours"
+      },
+      "rain_4h": {
+        "name": "Rain 4 hours"
+      },
+      "rain_8h": {
+        "name": "Rain 8 hours"
+      },
+      "rain_12h": {
+        "name": "Rain 12 hours"
+      },
+      "rain_24h": {
+        "name": "Rain 24 hours"
+      },
+      "rain_probability_1h": {
+        "name": "Rain Probability 1 hour"
+      },
+      "rain_probability_2h": {
+        "name": "Rain Probability 2 hours"
+      },
+      "rain_probability_4h": {
+        "name": "Rain Probability 4 hours"
+      },
+      "rain_probability_8h": {
+        "name": "Rain Probability 8 hours"
+      },
+      "rain_probability_12h": {
+        "name": "Rain Probability 12 hours"
+      },
+      "rain_probability_24h": {
+        "name": "Rain Probability 24 hours"
+      },
+      "precipitation_1h": {
+        "name": "Precipitation 1 hour"
+      },
+      "precipitation_2h": {
+        "name": "Precipitation 2 hours"
+      },
+      "precipitation_4h": {
+        "name": "Precipitation 4 hours"
+      },
+      "precipitation_8h": {
+        "name": "Precipitation 8 hours"
+      },
+      "precipitation_12h": {
+        "name": "Precipitation 12 hours"
+      },
+      "precipitation_24h": {
+        "name": "Precipitation 24 hours"
+      }
+    }
+  }
+}
