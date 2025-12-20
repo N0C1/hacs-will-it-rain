@@ -17,10 +17,10 @@ A modern Home Assistant integration that provides rain forecasts based on the Op
 
 **The Solution:** This integration gives you exactly what you need for smart home automations:
 
-- ✅ **Simple Yes/No answers** - "Will it rain in the next 2 hours?" 
-- ✅ **Your own threshold** - Define what "likely" means to you (30%? 60%? 80%?)
-- ✅ **Multiple time horizons** - 1h for awnings, 24h for garden planning
-- ✅ **Flexible automation options** - Use simple triggers or custom probability values
+- **Simple Yes/No answers** - "Will it rain in the next 2 hours?" 
+- **Your own threshold** - Define what "likely" means to you (30%? 60%? 80%?)
+- **Multiple time horizons** - 1h for awnings, 24h for garden planning
+- **Flexible automation options** - Use simple triggers or custom probability values
 
 ## Features
 
@@ -73,48 +73,6 @@ A modern Home Assistant integration that provides rain forecasts based on the Op
 - **City name** - e.g., `Vienna`, `Munich`, `London`
 - **Coordinates** - e.g., `47.2692,11.4041` (latitude,longitude)
 
-## Lovelace Examples
-
-**🌧️ Window Alert Cards:**
-
-```yaml
-# Close Windows Card (Rain Coming)
-type: conditional
-conditions:
-  - entity: sensor.rain_2h
-    state: "Yes"
-card:
-  type: entity
-  entity: sensor.rain_2h
-  name: "⚠️ Close Windows!"
-  icon: mdi:window-close
-  state_color: true
-
-# Keep Windows Open Card (No Rain)  
-type: conditional
-conditions:
-  - entity: sensor.rain_2h
-    state: "No"
-card:
-  type: entity
-  entity: sensor.rain_2h
-  name: "✅ Windows Safe to Stay Open"
-  icon: mdi:window-open
-  state_color: true
-```
-
-**📊 Simple Overview:**
-```yaml
-type: entities
-title: Rain Forecast
-entities:
-  - entity: sensor.rain_1h
-    name: "1h"
-  - entity: sensor.rain_4h
-    name: "4h"
-  - entity: sensor.rain_24h
-    name: "24h"
-```
 
 ## Credits
 
