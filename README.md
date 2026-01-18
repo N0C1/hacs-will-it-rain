@@ -3,13 +3,10 @@
 [![GitHub Release](https://img.shields.io/github/release/n0c1/hacs-will-it-rain.svg?style=flat-square)](https://github.com/n0c1/hacs-will-it-rain/releases)
 [![License](https://img.shields.io/github/license/n0c1/hacs-will-it-rain.svg?style=flat-square)](LICENSE)
 [![hacs](https://img.shields.io/badge/HACS-Default-orange.svg?style=flat-square)](https://github.com/hacs/integration)
-[![Add to Home Assistant](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=n0c1&repository=hacs-will-it-rain&category=integration)
-
 
 > **Disclaimer:** Parts of this project were created with the assistance of AI tools.  
 > All generated code has been reviewed, tested, and verified by the author.  
  This software is provided "as is", without any warranty or guarantee of correctness.
-
 
 A modern Home Assistant integration that provides rain forecasts based on the Open-Meteo API. Simple "Yes/No" sensors with a global threshold, plus detailed probability sensors for flexible automations.
 
@@ -44,6 +41,9 @@ A modern Home Assistant integration that provides rain forecasts based on the Op
 - **Automatic updates** every 10 minutes
 
 ## Installation
+
+[![Add to Home Assistant](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=n0c1&repository=hacs-will-it-rain&category=integration)
+
 
 ### HACS (Recommended)
 
